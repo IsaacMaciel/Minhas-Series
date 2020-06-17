@@ -19,15 +19,20 @@ import { Link } from 'react-router-dom'
       return (
   
         <Navbar color='light' light expand='md'>
-          <NavbarBrand tag={Link} to='/'> Minhas Séries</NavbarBrand>
-          <NavbarToggler onClick={toggle}/>
-          <Collapse isOpen={open} navbar>
-            <Nav className='ml-auto'>
-              <NavItem>
-                <NavLink href='/'> Gêneros</NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
+          <div className="container">
+            <NavbarBrand tag={Link} to='/'> Minhas Séries</NavbarBrand>
+            <NavbarToggler onClick={toggle}/>
+            <Collapse isOpen={open} navbar>
+              <Nav className='ml-auto'>
+                <NavItem>
+                  <NavLink href='/generos'> Gêneros</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href='/series'> Séries</NavLink>
+                </NavItem>
+              </Nav>
+            </Collapse>
+          </div>
         </Navbar>
   
       )
