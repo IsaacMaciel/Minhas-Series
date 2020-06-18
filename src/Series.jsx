@@ -26,7 +26,7 @@ const Series = () => {
                 <th scope='row'>{record.id}</th>
                 <td>{record.name}</td>
                 <td>
-                    <button className='btn btn-danger' onClick={() => deleteSerie(record.id)}>-</button>
+                    <button className='btn btn-danger mr-2' onClick={() => deleteSerie(record.id)}>-</button>
                     <Link className='btn btn-warning' to={`/series/${record.id}`}> Info </Link>
                 </td>
             </tr>
@@ -47,7 +47,7 @@ const Series = () => {
     return (
         <div className="container">
             <h1> Series </h1>
-            <div><Link className='btn btn-primary' to='/series/novo'> Nova Série </Link> </div>
+            <div><Link className='btn btn-primary my-3' to='/series/novo'> Nova Série </Link> </div>
             <table className="table table-dark">
             <thead>
                 <tr>

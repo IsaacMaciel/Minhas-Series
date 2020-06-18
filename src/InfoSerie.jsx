@@ -84,22 +84,29 @@ const InfoSerie = ({ match }) => {
                                 <div className="lead text-white">
                                     {data.status === 'ASSISTIDO' && <Badge color='success'>Assistido</Badge>}
                                     {data.status === 'PARA_ASSISTIR' && <Badge color='warning'> Para assistir</Badge>}
-
+                                    <div className='mt-3'>
+                                        {data.comments}
+                                    </div>    
+                                                                                    
                                 </div>
                             </div>
+
+                            
+
+
                         </div>
                     </div>
                 </div>
             </header>
             <div className='container'>
-                <button className='btn btn-primary' onClick={() => setMode('EDIT')}> Editar</button>
+                <button className='btn btn-primary my-3'  onClick={() => setMode('EDIT')}> Editar</button>
             </div>
             {
                 mode === 'EDIT' &&
                 <div className="container">
                     <h1> Novo Série</h1>
-                    <pre> {JSON.stringify(form)}</pre>
-                    <button className='btn btn-primary' onClick={() => setMode('INFO')} > Cancelar Edição</button>
+                   
+                    <button className='btn btn-primary my-3' onClick={() => setMode('INFO')} > Cancelar Edição</button>
                     <form>
                         <div className="form-group">
                             <label htmlFor="name"> Nome</label>
@@ -112,17 +119,7 @@ const InfoSerie = ({ match }) => {
                             />
                         </div>
 
-                        <div className="form-group">
-                            <label htmlFor="name"> Comentário</label>
-                            <input 
-                            type="text" 
-                            className='form-control' 
-                            id="name"
-                            onChange={setValue('comments')}
-                            value={form.comments}
-                            />
-                        </div>
-
+                        
                         <div className="form-group">
                             <label htmlFor="name"> Genero</label>
                            <select onChange={genre_set} defaultValue={genreId} className="form-control">
@@ -174,7 +171,7 @@ const InfoSerie = ({ match }) => {
                         </div>
 
                        
-                        <button onClick={save} type="submit" className='btn btn-primary'> Salvar</button>
+                        <button onClick={save} type="submit" className='btn btn-primary my-3'> Salvar</button>
                     </form>
                 </div>
             }

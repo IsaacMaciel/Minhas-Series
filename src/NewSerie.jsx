@@ -51,7 +51,7 @@ const NewSerie = () => {
                     type="text" 
                     className='form-control' 
                     id="name"
-                    placeholder='Nome do Gênero'
+                    placeholder='Nome da Série'
                     onChange={setValueName}
                     value={name}
                     />
