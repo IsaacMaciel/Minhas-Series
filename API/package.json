@@ -1,0 +1,45 @@
+{
+  "_from": "git+https://github.com/tuliofaria/minhas-series-server.git",
+  "_id": "minhas-series-server@1.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/minhas-series-server",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/tuliofaria/minhas-series-server",
+    "rawSpec": "https://github.com/tuliofaria/minhas-series-server",
+    "saveSpec": "git+https://github.com/tuliofaria/minhas-series-server.git",
+    "fetchSpec": "https://github.com/tuliofaria/minhas-series-server.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/tuliofaria/minhas-series-server.git#250b6cebd8305a4e12d3be936bb36f530cb5e2af",
+  "_spec": "https://github.com/tuliofaria/minhas-series-server",
+  "_where": "C:\\Users\\Zac\\Desktop\\RocketSeat\\Estudos ReactJs\\Project 1\\gerenciador-de-series",
+  "author": {
+    "name": "Tulio Faria"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "knex": "^0.19.5",
+    "sqlite3": "^4.1.0"
+  },
+  "deprecated": false,
+  "description": "Criado durante o evento Hands-on ReactJS do DevPleno.",
+  "devDependencies": {},
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "minhas-series-server",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "version": "1.0.0"
+}
