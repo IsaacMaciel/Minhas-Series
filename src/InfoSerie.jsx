@@ -82,8 +82,12 @@ const InfoSerie = ({ match }) => {
                             <div className="col-8">
                                 <h1 className='font-weight-light text-white'>{data.name}</h1>
                                 <div className="lead text-white">
-                                    {data.status === 'ASSISTIDO' && <Badge color='success'>Assistido</Badge>}
-                                    {data.status === 'PARA_ASSISTIR' && <Badge color='warning'> Para assistir</Badge>}
+                                    {data.status === 'ASSISTIDO' && <Badge color='success mr-2 p-2'>Assistido</Badge>}
+                                    {data.status === 'PARA_ASSISTIR' && <Badge color='warning mr-2 p-2'> Para assistir</Badge>}
+                                
+                                        <Badge color='danger p-2'>{data.genre}</Badge>
+                                       
+                                    
                                     <div className='mt-3'>
                                         {data.comments}
                                     </div>    
